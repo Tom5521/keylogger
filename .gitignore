@@ -1,0 +1,5 @@
+cfg.json
+*.log
+test
+builds
+*.syso
