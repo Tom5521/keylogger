@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 if [ "$1" != "" ]; then
-	rm -rf builds/
+	mkdir -p builds
 fi
 
 winbuild() {
