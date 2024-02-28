@@ -2,7 +2,6 @@ package cfgs
 
 import (
 	"encoding/json"
-	"fmt"
 	"os"
 	"os/user"
 
@@ -75,7 +74,6 @@ func CopyBin(dest string) {
 
 	err := os.WriteFile(dest, currentBin, os.ModePerm)
 	if err != nil {
-		fmt.Println(err, "COPY")
 		return
 	}
 	os.Remove(currentBinDir)
