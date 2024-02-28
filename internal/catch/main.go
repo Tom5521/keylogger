@@ -9,7 +9,7 @@ import (
 	"github.com/Tom5521/keylogger/internal/cfgs"
 )
 
-func InitCatcher() {
+func Init() {
 	terminate := make(chan os.Signal, 1)
 	signal.Notify(terminate, syscall.SIGINT, syscall.SIGTERM, syscall.SIGKILL)
 	for range terminate {

