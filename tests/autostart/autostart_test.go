@@ -1,6 +1,7 @@
 package autostart_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/Tom5521/keylogger/internal/autostart"
@@ -19,4 +20,7 @@ func TestMakeShortcut(t *testing.T) {
 			t.Fail()
 		}
 	}
+	fmt.Println("Status:", autostart.Check(app))
+	fmt.Println("Press enter to close")
+	fmt.Scanln()
 }
